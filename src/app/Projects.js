@@ -10,6 +10,7 @@ import calculatorImage from "../utils/calculator.png";
 import loginImage from "../utils/login.png";
 import portfolioImage from "../utils/portfolio.png";
 import hrms from "../utils/hrms.png";
+import { useNavigate } from "react-router-dom";
 
 const projects = [
   {
@@ -57,9 +58,10 @@ const projects2 = [
   },
 ];
 const Projects = () => {
-  const handlePreviousClick = () => {
-    window.location.href = "/app";
-  };
+  const navigate = useNavigate();
+    const handlePreviousClick = () => {
+        navigate("/app");
+    };
 
   const settings = {
     dots: true, // Show navigation dots

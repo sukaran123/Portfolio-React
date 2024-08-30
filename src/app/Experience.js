@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "../css/Experience.css";
 import myPhoto from "../utils/my_photo-removebg-preview.png";
+import { useNavigate } from "react-router-dom";
 
 const Experience = () => {
   const [expandedCard, setExpandedCard] = useState(null);
 
-  const handlePreviousClick = () => {
-    window.location.href = "/app";
-  };
+  const navigate = useNavigate();
+    const handlePreviousClick = () => {
+        navigate("/app");
+    };
 
   const toggleCard = (cardName) => {
     setExpandedCard(expandedCard === cardName ? null : cardName);

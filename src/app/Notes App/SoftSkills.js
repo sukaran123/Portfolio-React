@@ -1,9 +1,11 @@
 import React from 'react'
 import '../../css/SoftSkills.css'
+import { useNavigate } from 'react-router-dom';
 
 const SoftSkills = () => {
+  const navigate = useNavigate();
     const handlePreviousClick = () => {
-        window.location.href = "/app/notes";
+        navigate("/app");
     };
   return (
     <div className='soft-skills-container'>

@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import "../css/Mail.css";
 import myPhoto from "../utils/my_photo-removebg-preview.png";
+import { useNavigate } from "react-router-dom";
 
 const Mail = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     mail: "",
     message: "",
   });
-
-  const handlePreviousClick = () => {
-    window.location.href = "/app";
-  };
+    const handlePreviousClick = () => {
+        navigate("/app");
+    };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;

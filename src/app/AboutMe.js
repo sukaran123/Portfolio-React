@@ -1,14 +1,15 @@
 import React from 'react';
 import '../css/AboutMe.css'; // Ensure this path matches your project structure
 import myPhoto from '../utils/my_photo-removebg-preview.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // import App from '../App';
 // import AppPage from '../pages/AppPage';
 
 const AboutMe = () => {
-    const handlePreviousClick = () => {
-        window.location.href = '/app';
-    }
+  const navigate = useNavigate();
+  const handlePreviousClick = () => {
+      navigate("/app");
+  };
   return (
     // <div className="screen">
         <div className="about-me-container">

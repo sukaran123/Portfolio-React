@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import "../css/Education.css";
+import { useNavigate } from "react-router-dom";
 
 const Education = () => {
-  const handlePreviousClick = () => {
-    window.location.href = "/app";
-  };
+  const navigate = useNavigate();
+    const handlePreviousClick = () => {
+        navigate("/app");
+    };
   useEffect(() => {
     const phoneContainer = document.querySelector(".phone-container");
     if (phoneContainer) {

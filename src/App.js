@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 import PhoneStructure from "./pages/PhoneStructure";
 // import ResumePage from "./pages/ResumePage";
 // import AppPage from "./pages/AppPage";

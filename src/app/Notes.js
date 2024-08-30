@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import '../css/Notes.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Notes = () => {
-  const handlePreviousClick = () => {
-    window.location.href = "/app";
-  };
+  const navigate = useNavigate();
+    const handlePreviousClick = () => {
+        navigate("/app");
+    };
   const [searchQuery, setSearchQuery] = useState('');
 
   const notes = [

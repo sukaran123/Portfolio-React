@@ -1,14 +1,13 @@
 // TechnicalSkills.js
 import React from 'react';
 import '../../css/TechnicalSkills.css';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const TechnicalSkills = () => {
-//   const navigate = useNavigate();
-
-const handlePreviousClick = () => {
-    window.location.href = "/app/notes";
-};
+  const navigate = useNavigate();
+  const handlePreviousClick = () => {
+      navigate("/app");
+  };
 
   return (
     <div className='technical-skills-container'>
