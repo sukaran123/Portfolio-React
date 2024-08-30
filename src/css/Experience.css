@@ -1,0 +1,115 @@
+.experience-container {
+    border-radius: 0px 0px 50px 50px;
+    height: 516px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .phone-frame {
+    width: 375px;
+    height: 812px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .phone-notch {
+    width: 100%;
+    height: 44px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color: white;
+  }
+  
+  .time {
+    font-size: 14px;
+  }
+  
+  .status-icons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .experience-content {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .experience-image img {
+    width: 100%;
+  }
+  
+  .experience-details {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: flex-start; /* Align items to the start to ensure correct vertical alignment */
+    margin-bottom: 10px;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .profile-info p {
+    font-size: small;
+    margin: 0;
+  }
+  
+  .profile-info h3 {
+    font-size: small;
+  }
+  
+  .experience-description {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .experience-cards {
+    margin-top: 20px;
+  }
+  
+  .experience-card {
+    background-color: #ffa500;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    position: relative;
+    padding-bottom: 2rem;
+  }
+  
+  .experience-card h3 {
+    margin-top: 0;
+  }
+  
+  .button-wrapper {
+    margin-top: auto; /* Pushes the button to the bottom of the card */
+    /* margin-bottom: 7rem; Moves the button 7 rows (approximately) upward */
+  }
+  
+  .know-more {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: auto;
+  }
+  .experience-card p{
+    margin-bottom: 1rem;
+  }

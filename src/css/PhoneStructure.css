@@ -1,0 +1,85 @@
+.outer-div{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    height: 100vh;
+}
+.phone{
+    width: 300px;
+    height: 570px;
+    margin-top: 55px;
+    background-color: black;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    bottom: 10px;
+}
+.screen{
+    margin: 0;
+    background-color: white;
+    height: 565px;
+    border-radius: 50px;
+    padding: 2px;
+    background-image: url('../utils/1455244-beautiful-nature-phone-wallpapers-1080x1920-for-iphone-5s.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.screen.white-bg {
+    background-color: white; /* White background for app pages */
+    background-image: none;
+    color: black;
+}
+  
+.top-bar {
+    width: 100%;
+    /* height: 50px; */
+    /* background-color: transparent; */
+    /* color: black; */
+}
+.top-bar.black-icons {
+    color: black; /* Change this to affect all text/icons inside top-bar */
+}
+  
+  
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures elements stretch to fill space */
+    flex-grow: 1; /* Allows this area to take up all remaining space */
+    overflow: hidden; /* Prevent overflow of content */
+  }
+  .bottom-bar{
+    margin-top: auto;
+    width: 100%;
+  }
+  /* Add this CSS to PhoneStructure.css */
+
+/* Define the keyframes for diagonal color change */
+@keyframes diagonalColorChange {
+    0% {
+      background: linear-gradient(to bottom right, #ff0000, #0000ff); /* Red to Blue */
+    }
+    25% {
+      background: linear-gradient(to bottom right, #0000ff, #00ff00); /* Blue to Green */
+    }
+    50% {
+      background: linear-gradient(to bottom right, #00ff00, #ffff00); /* Green to Yellow */
+    }
+    75% {
+      background: linear-gradient(to bottom right, #ffff00, #ff0000); /* Yellow to Red */
+    }
+    100% {
+      background: linear-gradient(to bottom right, #ff0000, #0000ff); /* Red to Blue */
+    }
+  }
+  
+  /* Apply the animation to .outer-div */
+  .outer-div {
+    animation: diagonalColorChange 10s infinite; /* Animation duration and infinite looping */
+    background-size: 200% 200%; /* Optional: Adjust for smoother transitions */
+  }
+  

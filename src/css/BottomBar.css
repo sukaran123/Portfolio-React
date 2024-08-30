@@ -1,0 +1,89 @@
+/* BottomBar.css */
+
+/* Overall styling for the bottom bar */
+.bottom-bar{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; Allows absolute positioning for children */
+    width: 100%; /* Takes full width */
+    /* height: 60px; */
+    /* background-color: black; */
+    bottom: 20px;
+    /* margin-top: auto; */
+    /* background-color: black; */
+}
+.icons {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space out icons evenly */
+    padding: 10px 15px; /* Padding on left and right */
+    border-top-left-radius: 20px; /* Rounded corners on top */
+    border-top-right-radius: 20px;
+    /* box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); Subtle shadow for elevation */
+    /* backdrop-filter: blur(10px); Blur effect for background */
+  }
+  
+  /* Container for icons */
+  /* .icon-container {
+    display: flex;
+    gap: 10px;
+  } */
+  
+  /* Styling for each icon */
+ .icons .icon {
+    display: flex; /* Centers content */
+    justify-content: center; /* Centers icon */
+    align-items: center; /* Centers icon */
+    width: 40px; /* Size of each icon container */
+    height: 40px; /* Same height for uniformity */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    border-radius: 50%; /* Makes icon container circular */
+    cursor: pointer; /* Shows pointer on hover */
+    color: white;
+  }
+  .icons .icon:hover{
+    background-color:black;
+  }
+  
+  /* Optional styling for the flashlight icon to differentiate */
+  .icons .flash-light-icon {
+    background-image: url('../utils/flashlight\ \(1\).png'); /* Replace with actual path */
+    background-size: cover; /* Ensures full coverage */
+    background-position: center; /* Centers background image */
+  }
+  
+  /* Container for the sliding button */
+  .sliding-container {
+    position: relative;
+    /* right: 10px; */
+    /* bottom: 10px; */
+    width: 80px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    /* justify-content: center; */
+    margin-left: 98px;
+    /* margin-right: auto; */
+
+  }
+  
+  /* Styling for the sliding icon */
+  .sliding-icon {
+    width: 30px; /* Smaller width for the sliding button */
+    height: 30px; /* Matches height for circular button */
+    background-color: white; /* Solid color for visibility */
+    border-radius: 50%; /* Makes the button circular */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s ease; /* Smooth slide transition */
+    margin-top: 10px;
+    bottom: 20px;
+  }
+  
+  /* Hover or interaction state for the sliding effect */
+  .sliding-container:active .sliding-icon {
+    transform: translateX(40px); /* Slides button to the end of the track */
+  }

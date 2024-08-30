@@ -1,0 +1,28 @@
+.soft-skills-container{
+    border-radius: 0px 0px 50px 50px;
+    height: 516px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    margin: 0;
+    padding: 10px;
+}
+.content1{
+    height: 100vh;
+}
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #fff;
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+  }
+  
+  .footer-icons i {
+    font-size: 22px;
+    color: #ff9900; /* Adjust the color if needed */
+    cursor: pointer;
+  }

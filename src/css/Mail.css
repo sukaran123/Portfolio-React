@@ -1,0 +1,109 @@
+/* Mail.css */
+.mail-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f5; /* Light grey background for the form */
+}
+
+.top-bar-place {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px; /* Max width to simulate a phone screen */
+  background-color: white; /* White background for top bar */
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.top-bar-placeholder2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; /* Space between top bar and profile section */
+}
+.top-bar-placeholder2 i{
+  margin-right: 10px;
+}
+
+.fa-greater-than {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #333; /* Dark grey color for the arrow */
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px; /* Space between image and name */
+  background-color: orange;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.fa-paper-plane {
+  cursor: pointer;
+  font-size: 1.4rem;
+  /* color: #007bff; Blue color for send icon */
+  transition: color 0.3s ease;
+}
+
+.fa-paper-plane:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.form {
+  width: 100%;
+  max-width: 400px; /* Max width to simulate a phone screen */
+  padding: 20px;
+  background-color: white; /* White background for form area */
+  border-radius: 10px; /* Rounded corners for form area */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for form depth */
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-form div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Space between fields */
+}
+
+.add-form label {
+  flex: 0 0 auto; /* Prevent label from stretching */
+  margin-right: 10px; /* Space between label and input */
+  color: lightslategray;
+}
+
+.add-form input {
+  flex: 1; /* Allow input to fill remaining space */
+  padding: 8px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  border: none;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 10px 0; /* Space between form elements */
+}

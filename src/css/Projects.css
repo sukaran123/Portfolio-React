@@ -1,0 +1,60 @@
+.projects-container {
+    border-radius: 0px 0px 50px 50px;
+    height: 516px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    margin: 0;
+    padding: 10px;
+    /* overflow-x: hidden; */
+}
+.project-item {
+    position: relative;
+    padding: 10px;
+  }
+  
+  .project-item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+  }
+  
+  .project-details {
+    /* position: absolute; */
+    bottom: 10px;
+    left: 10px;
+    color: black;
+  }
+  
+  .project-details h3,
+  .project-details p,
+  .project-details button {
+    margin: 0;
+  }
+  /* .white-text .project-details h3,
+.white-text .project-details p {
+  color: white;
+} */
+.project-item .buttons {
+    display: flex; /* Use flexbox to manage layout */
+    gap: 10px; /* Adjust the gap between buttons */
+  }
+  
+  .button-1,
+  .button-2 {
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+  }
+  
+  .button-1 {
+    background-color: #007bff; /* Specific color for button-1 */
+  }
+  
+  .button-2 {
+    background-color: #28a745; /* Specific color for button-2 */
+  }
