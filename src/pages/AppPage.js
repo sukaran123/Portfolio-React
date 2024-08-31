@@ -55,7 +55,7 @@ const AppPage = () => {
     {
       name: "Resume",
       imageSrc: require("../utils/resume icon.png"),
-      link: "https://drive.google.com/file/d/1QFDLg4cMUebjj18bVY2c3aegyL4Vuw-1/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1BCqQwKU87bHfELbdMr4wXODBqEUF9CQn/view?usp=sharing",
     },
     {
       name: "Leetcode",
